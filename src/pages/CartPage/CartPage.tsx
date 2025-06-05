@@ -133,7 +133,7 @@ const CartPage = () => {
         className={`d-flex flex-column align-items-center justify-content-center ${styles.emptyContainer}`}
       >
         <div className="text-center mt-5">
-          <h2 className="mb-3">🛒 Ваша корзина пуста</h2>
+          <h2 className="mb-3">Ваша корзина пуста</h2>
           <p className="text-muted">Выберете сервер, чтобы оформить заявку</p>
         </div>
       </Container>

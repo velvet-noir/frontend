@@ -10,6 +10,7 @@ const Header = () => {
   const isLoggedIn = useSelector(
     (state: RootState) => state.auth.isAuthenticated,
   );
+  const isStaff = useSelector((state: RootState) => state.auth.isStaff);
 
   return (
     <Navbar className={styles.header} variant="dark" expand="lg">
@@ -24,6 +25,12 @@ const Header = () => {
           <Nav.Link as={Link} to="/contacts" className={styles.navLink}>
             Контакты
           </Nav.Link>
+
+          {isStaff && (
+            <Nav.Link as={Link} to="/application" className={styles.navLink}>
+              Заявки
+            </Nav.Link>
+          )}
         </Nav>
 
         <div

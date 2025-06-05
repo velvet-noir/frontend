@@ -1,0 +1,82 @@
+/* Контейнер страницы */
+.pageContainer {
+  padding: 2rem 0;
+}
+
+/* Заголовок */
+.pageTitle {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+/* Строка поиска */
+.searchRow {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Поле ввода поиска */
+.searchInput {
+  max-width: 400px;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Кнопка поиска */
+.searchButton {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+/* Таблица заявок */
+.appTable {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Ячейки заголовка таблицы */
+.appTable thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Ячейки таблицы */
+.appTable td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Область с кнопками */
+.tableActions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Кнопки действия */
+.actionButton {
+  min-width: 100px;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.actionButton:hover {
+  transform: scale(1.05);
+}
+
+/* Спиннер загрузки */
+.loadingSpinner {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}

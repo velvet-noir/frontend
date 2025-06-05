@@ -2,6 +2,7 @@ import AuthPage from "./pages/AuthPage/AuthPage";
 import HomePage from "./pages/HomePage/HomePage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import CartPage from "./pages/CartPage/CartPage";
+import ApplicationsPage from "./pages/AppPage/AppPage";
 
 const AboutPage = () => (
   <div>
@@ -23,6 +24,7 @@ const routes = [
   { path: "/contacts", element: <ContactsPage /> },
   { path: "/auth", element: <AuthPage /> },
   { path: "/cart", element: <CartPage /> },
+  { path: "/application", element: <ApplicationsPage /> },
 ];
 
 export default routes;
