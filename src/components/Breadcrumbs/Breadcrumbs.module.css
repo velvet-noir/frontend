@@ -1,0 +1,14 @@
+.breadcrumbs {
+  margin: 1px 0;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.breadcrumbs span {
+  color: #dddddd;
+}

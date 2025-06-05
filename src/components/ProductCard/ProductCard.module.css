@@ -1,0 +1,77 @@
+.card {
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* убираем фиксированную высоту */
+  max-height: 160px; /* ограничиваем высоту */
+  object-fit: contain; /* картинка полностью вписывается в контейнер */
+  background-color: #f9f9f9; /* добавим фон, если картинка прозрачная */
+  padding: 10px; /* небольшой отступ вокруг картинки */
+}
+
+.cardBody {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #666;
+  flex-grow: 0;
+  min-height: 60px;
+  margin-bottom: 0.25rem;
+}
+
+.cardFooter {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price {
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #457b9d;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1d3557;
+}

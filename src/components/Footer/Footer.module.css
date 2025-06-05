@@ -1,0 +1,29 @@
+.footer {
+  margin-top: auto; /* это нужно */
+  margin-bottom: 0; /* если есть, убери */
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

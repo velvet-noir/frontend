@@ -1,0 +1,42 @@
+.pageContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.noResultsWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+
+  grid-column: 1 / -1; /* растянуть по всей ширине сетки */
+}
+
+.noResultsMessage {
+  color: #777;
+  font-size: 1.4rem;
+  font-style: italic;
+  user-select: none;
+}
